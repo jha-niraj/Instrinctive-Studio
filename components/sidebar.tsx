@@ -1,7 +1,6 @@
 'use client'
 
 import React from 'react';
-import { usePathname } from 'next/navigation';
 import { Button } from './ui/button';
 import { BookOpen, Clock, Users, BugIcon as QuestionMark, BarChart, Settings, ChevronLeft, ChevronRight } from "lucide-react"
 import Pageheader from './header';
@@ -12,7 +11,6 @@ interface SidebarProps {
 }
 
 const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
-    const pathname = usePathname();
     const toggleSidebar = () => setIsOpen(!isOpen)
 
     return (

@@ -9,8 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { Checkbox } from "@/components/ui/checkbox";
-import toast, { Toaster } from "react-hot-toast";
-import axios from "axios";
+import { Toaster } from "react-hot-toast";
 import { useStudentStore } from "./store/useStudentStore";
 
 interface Course {
@@ -145,7 +144,7 @@ export default function Page() {
 						<SheetHeader>
 							<SheetTitle>Add New Student</SheetTitle>
 							<SheetDescription>
-								Enter the details of the new student here. Click save when you're done.
+								Enter the details of the new student here. Click save when you&apos;re done.
 							</SheetDescription>
 						</SheetHeader>
 						<form onSubmit={handleSubmit} className="space-y-4 mt-4">

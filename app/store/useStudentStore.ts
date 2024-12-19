@@ -11,7 +11,7 @@ interface StudentState {
 
     // Actions
     setStudents: (students: Student[]) => void;
-    setIsLoading: (loading: Boolean) => void;
+    setIsLoading: (loading: boolean) => void;
     addStudent: (student: Student) => void;
     deleteStudent: (id: string) => void;
     updateStudent: (id: string, updatedData: Partial<Student>) => void;

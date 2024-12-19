@@ -1,4 +1,4 @@
-import { Bell, Filter, HelpCircle, LogOut, Menu, MessageCircle, MessageSquareMore, Search, Settings, User } from "lucide-react";
+import { Bell, HelpCircle, LogOut, Search, Settings, User } from "lucide-react";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";

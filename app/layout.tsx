@@ -2,10 +2,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Bell, HelpCircle, Search, Settings, BarChart, BookOpen, Users, Clock, BugIcon as QuestionMark } from 'lucide-react'
-import { Input } from "@/components/ui/input"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Button } from "@/components/ui/button"
 import PremiumLayout from "./clientlayout";
 
 const geistSans = Geist({
@@ -33,7 +29,11 @@ export default function RootLayout({
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 			>
-				<PremiumLayout children={children} />
+				<PremiumLayout>
+					{
+						children
+					}
+				</PremiumLayout>
 			</body>
 		</html>
 	);

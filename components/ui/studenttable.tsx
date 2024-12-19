@@ -1,11 +1,9 @@
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 import axios from "axios"
 import Image from "next/image"
 import { Ellipsis } from "lucide-react";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
-import toast from "react-hot-toast"
 import { useStudentStore } from "@/app/store/useStudentStore";
 
 const TableRowSkeleton = () => (
@@ -59,20 +57,20 @@ export default function StudentTable() {
 
                 const data = await response.data;
                 setStudents(data.response);
-            } catch (err: any) {
+            } catch (err) {
                 console.log("Error while fetching students lists: ", err);
             } finally {
                 setIsLoading(false);
             }
         }
         fetchStudentsLists();
-    }, [])
+    })
 
     const handleStudentDelete = async (id: string) => {
         try {
             await deleteStudentAsync(id);
             // toast.success(data.msg);
-        } catch (err: any) {
+        } catch (err) {
             console.log("Error while deleting a student: ", err);
         }
     }

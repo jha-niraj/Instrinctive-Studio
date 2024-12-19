@@ -20,7 +20,7 @@ export async function POST(req: NextRequest) {
         }
 
         return NextResponse.json({ msg: "Student deleted successfully", response }, { status: 200 });
-    } catch (err: any) {
+    } catch (err) {
         console.log("Error while deleting the student: " + err);
         return NextResponse.json({ msg: "Error while deleting the student: " }, { status: 501 });
     }

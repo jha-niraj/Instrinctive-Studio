@@ -14,7 +14,7 @@ export async function GET(req: NextRequest) {
         }
 
         return NextResponse.json({ msg: "Student List fetched Successfully", response }, { status: 200 });
-    } catch (err: any) {
+    } catch (err) {
         console.log("Error while fetching the student lists: " + err);
         return NextResponse.json({ msg: "Error while fetching the student lists: " }, { status: 501 });
     }
