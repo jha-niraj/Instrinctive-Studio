@@ -1,4 +1,4 @@
-import { Bell, Filter, HelpCircle, LogOut, Menu, MessageCircle, Search, Settings, User } from "lucide-react";
+import { Bell, Filter, HelpCircle, LogOut, Menu, MessageCircle, MessageSquareMore, Search, Settings, User } from "lucide-react";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
@@ -27,7 +27,7 @@ export default function Pageheader() {
                     <DropdownMenuTrigger asChild>
                         <Button variant="ghost" className="relative h-8 w-8 rounded-full">
                             <Avatar className="h-8 w-8">
-                                <AvatarImage src="/placeholder.svg" alt="Adeline H. Dancy" />
+                                <AvatarImage src="https://media.istockphoto.com/id/1338134319/photo/portrait-of-young-indian-businesswoman-or-school-teacher-pose-indoors.jpg?s=612x612&w=0&k=20&c=Dw1nKFtnU_Bfm2I3OPQxBmSKe9NtSzux6bHqa9lVZ7A=" alt="Adeline H. Dancy" />
                                 <AvatarFallback>AD</AvatarFallback>
                             </Avatar>
                         </Button>
